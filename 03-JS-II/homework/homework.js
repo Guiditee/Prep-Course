@@ -15,7 +15,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(edad > 18 ){
+  if(edad >= 18 ){
     return 'Allowed';
   }
   else{
@@ -47,11 +47,11 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if( idioma === aleman){
+  if( idioma === 'aleman'){
     return 'Guten Tag!';
-  } else if(idioma === mandarin){
+  } else if(idioma === 'mandarin'){
     return 'Ni Hao!';
-  } else if(idioma === ingles){
+  } else if(idioma === 'ingles'){
     return 'Hello!';
   }else{
     return 'Hola!';
@@ -85,7 +85,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-return numero === 10 || numero ===5;
+return numero === 10 || numero === 5;
 
 }
 
